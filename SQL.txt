@@ -1,0 +1,354 @@
+SQL
+
+1:Which of the following statement about the creation of views in SQL Server is true?
+A) A statement within views may include the keywords ORDER BY,COMPUTE,COMPUTE BY, and INTO.
+B) Views can reference temporary tables.
+C) Views cannot execute stored procedures.----------------------------------------------------------ANS
+D) Views can reference more than 1024 columns.
+
+2:Evaluate the below code Select empno,ename,dname from emp e,dept d where e.deptno=d.deptno is same as that of:
+A)Select empno,ename,dname from emp e full outer join dept d on e.deptno=d.deptno
+B)Select empno,ename,dname from emp e lCharitharthReddy.Venumbaka@cognizant.comeft outer join dept d on e.deptno=d.deptno
+C)Select empno,ename,dname from emp e inner join dept d on e.deptno=d.deptno----------------------------------------------------------ANS
+D)Select empno,ename,dname from emp e self join dept d on e.deptno=d.deptno
+E)Select empno,ename,dname from emp e right outer join dept d on e.deptno=d.deptno
+(0r)
+Select column name from table t1 table t2 where (t1.id=t2.id)
+Ans: select col name from table t1 inner join table t2 on t1.id=t2.id
+3:Constraints can be applied at table level only… 
+True
+False----------------------------------------------------------ANS
+
+4:Complete the following statement
+_____________Integrity preserves the defined relationships between tables when rows are entered or deleted.
+A)Domain
+B)Referential----------------------------------------------------------ANS
+C)User-Defined
+D)Entity
+
+5:Which of the following code is invalid?
+A)Select * from (Select * from emp_master)----------------------------------------------------------ANS
+B)Select * from (Select * from emp_master)e
+C)Select empno,ename,(Select dname from Department_Master d where d.deptno=e.deptno) from emp_master e
+D)Select empno,ename from emp_master e where deptno in (select deptno from Department_Master d)
+
+6:following is the stucture for table Emp : Create table EMP( EID int,ENAME varchar(20),ESAL int) To insert data which option is incorrect?
+A) insert into EMP values (1,'A',null)
+B) insert into EMP(ename,empno) values ('A',1)
+C) insert into EMP values (1,'A','null')----------------------------------------------------------ANS
+D) insert into EMP(empno,empname) values (1,'A')
+
+7:Composite primary key can be specified while creating the tables through table level constraint. 
+True----------------------------------------------------------ANS
+False
+
+8:Which of the following options ensure that all attr ibutes in a relation are expected to be in their
+most atomic state only?
+A)1NF----------------------------------------------------------ANS
+B)2NF
+C)4NF
+D)3NF
+E)BCNF
+
+9) which one ensure that in a relation all attributes must be atomic and every non key attribute is
+fully functionally dependent on key attribute for its existence?
+a)1NF 
+b)2NF 
+c)3NF ----------------------------------------------------------ANS
+d)4NF 
+e)BCNF
+
+10) 3NF means if there exists p(a,b) as a primary key on a relation R(a,b,c,d,e) then apart from
+all prior conditions being satisfied.
+A)It should not happen that c identifies d----------------------------------------------------------ANS
+B)It may happen that c identifies d
+C)It should not happen that c identifies b
+D)It must happen that c identifies b
+
+11) Which out of the following data types are not allowed to be used in procedures?
+A)smalldatetime
+B)BLOB
+C)datetime
+D)XML----------------------------------------------------------ANS
+
+12) Which of the following is not true with Sub queries?
+A)They can be applied in the expression list of select statement
+B)They can be applied in "order by" clause----------------------------------------------------------ANS
+C)They can be applied in "having" clause
+D)They can be applied in the"from" clause
+
+13) Which one of the following are not DDL statement?
+A)TRUNCATE
+B)ALTER
+C)USE
+D)identity----------------------------------------------------------ANS
+
+14) which of the following is true about sub query?
+A)sub queries can be written only in where clause
+B)dependency of inner query on outer query is required only in case of co-related sub queries----------------------------------------------------------ANS
+C)inner query can return only one value
+D)sub queries cannot be used in select statement
+E)inner query is always dependent on outer query for it's execution
+
+15) Which TWO of the following are features of a local temporary stored procedure?
+A)It is automatically deleted when the connection is closed.----------------------------------------------------------ANS
+B)It is similar to an inline User defined function.
+C)It can be executed only by the connection that created it.----------------------------------------------------------ANS
+D)It can be executed from other server connections also.
+
+16) Complete the following _____________integrity defines a row as a unique entity for a
+particular table.
+A)Referential
+B)Domain
+C)Entity----------------------------------------------------------ANS
+D)User-Defined
+
+17) In CLR functions for which two datatypes, default value cannot be specified ?
+A)char
+B)Varchar(MAX)----------------------------------------------------------ANS
+C)XML
+D)VarBinary(Max)
+
+18) Which of the following code is invalid?
+A)Select empno,ename,deptno from emp_master e where deptno in (select top 5 deptno from
+Depatment_Master d order by deptno)
+B)Select empno,ename,deptno from emp_master e where deptno in (select deptno from
+Department_Master d) compute count(deptno)
+C)Select distinct empno,ename from emp_master e where deptno in (select deptno from
+Department_Master d group by deptno)
+D)Select empno,ename,deptno from emp_master e where deptno in (select deptno from----------------------------------------------------------ANS
+Department_Master d compute count(deptno))
+
+19) Which of the following option only allow you to move forward from the first row of the cursor
+and onward?
+A)FORWARD
+B)SCROLLON
+C)FAST_FORWARD
+D)FROWARD_ONLY----------------------------------------------------------ANS
+
+
+20) Which integrity ensures the validity of entries for a specific column?
+A)Domain----------------------------------------------------------ANS
+B)Entity
+C)Referential
+D)User-Defined
+
+
+21) How does a subquery with EXISTS work?--checkbox
+A)The subquery functions as an existence test----------------------------------------------------------ANS
+B)The subquery returns a value of TRUE or FALSE----------------------------------------------------------ANS
+C)The WHERE clause of the outer query tests whether data exists in the subquery for each row----------------------------------------------------------ANS
+of the outer subquery.
+D)The subquery returns a list of rows that match the criteria.
+
+22) Which of the following statement is wrong about joins?
+A)applying same tables on both the sides of join keyword means self -join.
+B)while joing the tables where clause comes before on clause----------------------------------------------------------ANS
+C)Combing two tables without where condition generates cartesian product
+D)there is no keyword call self-join
+E)By default outer join means left outer join
+
+23) Constraints are useful for checking the validity of DDL operations 
+TRUE----------------------------------------------------------ANS
+FALSE
+
+24) Which one of the following table names is a temporary table that is visible only on the
+connection on which it was created?
+A)@@mytable
+B)#mytable----------------------------------------------------------ANS
+C)##mytable
+D)@mytable
+
+25) On a table emp,triggers were created in the following order a]After trigger T1 b]After trigger
+T2 c]After trigger T3.What will be the order of execution of these triggers?
+A)T3,T2,T1
+B)T1,T2,T3----------------------------------------------------------ANS
+C)T3,T1,T2
+D)T1
+
+26) After table is created,which of the following option is true?
+A)We cannot rollback the creation----------------------------------------------------------ANS
+B)None of the listed option
+C)We can rollback the creation
+D)We cannot see the table until we commit
+
+27) Which TWO of the following are correct for indexed views?
+A)You can create only one index on a view.
+B)An indexed view is any view that has a clustered index defined on it----------------------------------------------------------ANS
+C)The indexed view is a logical entity and is not materialized in the database
+D)Indexed views aid in optimizing performance----------------------------------------------------------ANS
+
+28) Parentheses are required while declaring functions even if there are no parameters in
+it.
+TRUE----------------------------------------------------------ANS
+FALSE
+
+29) Which of the following option is valid as Function Type(incomplete ques)?--one option
+A)Text
+B)XML
+C)TABLE----------------------------------------------------------ANS
+D)Timestamp
+
+30) which t-sql statement directly permitted in stored procedure??
+a)crete table----------------------------------------------------------ANS
+b)create triggers
+c)alter procedure
+d)alter function
+
+31) BCNF maens if there exists p(a,b) as a primary key on a relation R(a,b,c,d,e), then apart
+from conditions of prior normal for (incomplete ques)
+A)it should not happen that c identifies b
+B)it should not happen that a identifies e
+C)it may happen that a identifies c----------------------------------------------------------ANS
+D)then it must happen that d identifies b
+
+32) The following SQL is which type of join: SELECT
+CUSTomer.CUSTOMER_ID,ORDER.CUSTOMER_ID, NAME,ORDER_ID FROM
+CUSTOMER,ORDER;
+A)Equi-join
+B)Outer join
+C)Natural join----------------------------------------------------------ANS
+D)Cartesian join
+
+33) select order.colname,customer,col.order,colname from customers,order
+a)inner join----------------------------------------------------------ANS
+b)natural join
+c)eqi join
+d)Cartesian
+
+34) Which form of normalization deals with transitive dependency(incomplete ques) --checkbox
+A)4NF
+B)BCNF
+C)1NF
+D)2NF
+E)3NF----------------------------------------------------------ANS
+
+35) Which of the following command you can use to navigate-----in the cursor?(incomplete
+ques)
+A)SELECT
+B)READ
+C)RETRIVE
+D)FETCH----------------------------------------------------------ANS
+
+36) Which one of the following strored procedure types co-------SQL Server and begins with
+xp_?(incomplete ques)
+A)User Defined
+B)Extended----------------------------------------------------------ANS
+C)CLR
+D)System
+
+37) Which out of the following options cannot be implemented---creating a table?(incomplete
+ques)
+A)creating table level constraint
+B)triggers----------------------------------------------------------ANS
+C)identity
+D)specifying filegroup
+E)creating column level constraint
+
+38) Which of the following statement is wrong about select s-(incomplete ques)
+A)it can have optional group by clause
+B)it compulsory needs a FROM clause
+C)it can have compute by clause irrespective of exist---by clause----------------------------------------------------------ANS
+D)it can have ORDER BY clause
+E)it can have optional where clause
+
+39) When are constraints checked on a table with INSTEAD OF----AFTER trigger (incomplete
+ques)
+A)After the INsTEAD OF triggers and before the AFter trigger----------------------------------------------------------ANS
+B)Before the INSTEAD OF and AFter triggers
+C)Before an INSTEAD OF trgger set to execute last-----sp_settiggerorder
+D)After the INSTEAD OF and AFTER triggers
+
+40) Which of the followinf helps us to create and populate a------the data of an existing
+table?(incomplete ques)
+A)SELECT Except
+B)SELECT ONLY
+C)SELECT INTO----------------------------------------------------------ANS
+D)SELECT *
+
+41) If you begin a transaction but SQL Server crashes before the transaction completes,what
+happens to the transaction?
+A)It is automatically rolled back----------------------------------------------------------ANS
+B)it is automatically commited on loading
+C)The transaction is placed on hold until you complete it
+D)it causes a deadlock
+
+42) Which out of the follwing can store 2GB of data?
+A)BLOB
+B)NTEXT
+C)TEXT----------------------------------------------------------ANS
+D)nvarchar(max)
+
+Which datatype has 2GB storage space?
+a) BLOB b) NText c) text 
+d) nvarchar(max)----------------------------------------------------------ANS
+
+43) Which out of the following is a Command to get str-----table created?(incomplete ques)
+A)sp_cons
+B)sp_helpconstraint
+C)sp_helptext
+D)sp_help----------------------------------------------------------ANS
+E)sp_sourceCode
+
+44) Which system stored procedure is used to display all the views?
+Ans: sp_tables
+
+45) Which of the Following stored procedurs displays the dependencies of view?
+a) sp_help
+b) sp_dependencies
+c) sp_depends----------------------------------------------------------ANS
+d) sp_helpdepends
+
+46) Which constraint ensures that values must be entered for a column?
+A)DEFAULT
+B)PRIMARY
+C)CHECK
+D)UNIQUE
+E)NOT NULL----------------------------------------------------------ANS
+
+47) which normalization requires candidate key??
+a)1nf
+b)2nf
+c)3nf
+d)bcnf----------------------------------------------------------ANS
+
+48) relating tables-invalid or Not used to combine data from multiple tables?
+a)join 
+b)subquery 
+c)role ----------------------------------------------------------ANS
+d)union
+
+49) which one u have to create with business rules???
+ans:user defined
+
+50) features of index on stored procedures (check box)
+a)only one index per stored procedure----------------------------------------------------------ANS
+b) it is not saved in database----------------------------------------------------------ANS 
+c)it is performance optimal----------------------------------------------------------ANS
+2 more options----------------------------------------------------------ANS
+
+51) not a body type function
+a)internal----------------------------------------------------------ANS
+b)scalar
+c)multi lined..
+d)inline
+
+52) triggers can be nested to d maximum level Ans: 32
+
+53) Cursor can be used up to how many levels? Ans: 32
+
+54) subquery cannot start after 
+a)from ----------------------------------------------------------ANS
+b) where 
+c)expression
+
+55) Which one of the following keyword is NOT used with T-SQL cursors?
+a. DEALLOCATE
+b. FETCH
+c. MOVENEXT----------------------------------------------------------ANS
+d. DECLARE
+e. SET
+
+56) Ansi_warnings is not honored wen error occurs in stored procedure or functions? true or false.. 
+
+Ans: true
