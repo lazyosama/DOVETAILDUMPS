@@ -1,0 +1,438 @@
+1)  You can code your asp.net 3.5 applications in any language compatible with Common Language Runtime? 
+a) True ---------------------ANS
+b) False               
+
+2) Which server side state management option should you use, if you are storing infrequently changed global information that is used by many users?(Select One)
+	a) database
+	b)application state ---------------------ANS
+	c)session
+	d)profile  
+
+3) Which statement are true about  web forms?(select 3)
+
+a)  web forms are compatible with VB.Net and C# langauages ---------------------ANS
+b) web forms code runs on server dynamically generates HTML Output ---------------------ANS
+c) in web forms programming logic resides in separate file known as
+d) web form are compatible with any language supported by >NET Configuration ---------------------ANS
+
+
+4) HTML controls can be changed into HTML server Controls by adding the Attribute ( select One)
+a) server=”True”
+b) Runat=”server” ---------------------ANS
+c) ServerControls=”true”
+d) HTMLServer=”True” 
+
+
+5) __________ passes information from one page to another(http://ramanisandeep.net/2008/11/21/passing-values-from-one-page-to-another-page-aspnet/)
+a) Post Method ---------------------ANS
+b) QueryString ---------------------ANS
+c) Response Redirect ------MAYBE
+d) Get Method
+
+6) Which application folder contains source code for utility classes and business objects?(select One)
+a)App_Data
+b)App_Browsers
+c)App_code   ---------------------ANS
+d) Bin
+e) App_GlobalResources
+
+7)What does the Globalisation include?(Check 2)
+a) it includes the process of internationalizing the application code ---------------------ANS
+b) It includes localizing the application to other languages and cultures ---------------------ANS
+c) it includes the process of giving global access to entire web application 
+D) it include localizing the application to different user groups based on their work  
+
+
+8) What does the following code denote( Check 2)
+Using system
+Using system.collection
+Using system.globalisation
+Public class MyCultureinfo {
+Public static void main()
+{
+Cultureinfo my=ne cultureinfo(“es-ES”,false)
+}
+a)culture info class provides global info for different culture
+b)denotes how to create culture info for English
+c)denotes abt specific culture ---------------------ANS
+d)usage of cultureinfo class ---------------------ANS
+e)object for US-english
+
+
+9) gets or sets alter text for hidden image read by screen renders provide ability to skip the list of links
+a)skip link
+b)skiplink text ---------------------ANS
+c)skip image
+d)skip text
+
+10)determine whether page has been process for first tym/already process by some other event(http://msdn.microsoft.com/en-in/library/system.web.ui.page.ispostback.aspx
+)
+a)auto postback
+b)iscall back
+c)isclient back
+d)ispost back ---------------------ANS
+
+11) Application level events can be placed in(http://msdn.microsoft.com/en-us/library/fwzzh56s)
+a)the main()entry point of app
+b)global.asax ---------------------ANS
+c)web.config
+d)first page of app
+
+12) public delegate void my event handler(object sender,my event args e)( http://msdn.microsoft.com/en-us/library/system.eventhandler.aspx)
+a)event delegate declaration…not sure ---------------------ANS
+b)event trigger
+c)event declaration
+d)should return a delegate
+
+14) In a asp.net web page it is mandatory to have code written in c# or in a vb.net?(t/f)
+FALSE ---------------------ANS
+
+
+16.true about application state(choose 2)
+a)application state(“welcome message”)=”welcome”
+b) application  (“welcome message”)=”welcome” ---------------------ANS
+c)default method that program uses to page and ctrl  program value between round trip
+d)global storage mechanism access all pages in web application ---------------------ANS
+
+17)code and html element in 1 file,program code contains
+a) Script runat=server ---------------------ANS
+b) Script runin=same file
+c)<%@ page code code file=self
+d) )<%@ page directory language=vb
+
+19)to set encoding for all page add-------- property to web config files -------ANS  (http://msdn.microsoft.com/en-us/library/39d1w2xf(v=vs.100).aspx)    see tis topic To specify encoding
+
+a)encoding
+b)configuration
+c)globalization ---------------------ANS
+d)cultureinfo
+
+20)single page model
+a)include keyboard access support for ur language
+b)public delegate voideventhandler ---------------------ANS
+c)attributes related to globalization
+d)set ui culture and culture(syntax)
+
+22) ASP.NET 3.5 has an integrated
+1.php
+2.ajax ---------------------ANS
+3.flash
+4.pdf
+
+
+
+
+26.2 half of a code behind page are related by(any 2)(ans s crt )
+a)partial classes ---------------------ANS
+b)abstract class
+c)overloading
+d)inheritance ---------------------ANS
+
+27)-------displays a set of text or image hyperlinks that enable users to more easily navigate a website while taking minimum amt of page space
+a)site map node item
+b)site map path ---------------------ANS
+c)site map
+d)site map node
+
+29)code ans
+Compile time error ---------------------ANS
+
+
+30.One event with multiple ---------------------ANS
+
+
+31) When the request is received from the browser by the webserver,how does it handle the request?(check 3)
+
+a) All html for the page is collected,it is sent to the browser for parsing and displayed ---------------------ANS
+b) Web-server hands over aspx and html files to asp.net at runtime for processing
+c) Web-server hands over aspx files to asp.net at runtime for processing ---------------------ANS
+d) For html and aspx files, the web server reads and sends to the browser ---------------------ANS
+e) For html files, the web server reads and sends to the browser
+
+
+32. master page consists of 2 pieces, master page itself and 
+	a)one or more themes
+	b)one or more templates
+	c)one or more layout pages
+	d)one or more content pages ---------------------ANS
+
+33. true abt code behind file in asp.net?(check 3)
+	a)code behind class file  containing core application logic is compiled so that it can be creaated and used as an object ---------------------ANS
+	b)you  can separate presentation logic from core application logic ---------------------ANS
+	c)you can  combine presentation logic with core application logic
+	d)the .aspx page inherits from code behind class and code behind class inherits from page class ---------------------ANS
+	e)the .aspx page inherits from page class and  code behind class inherits from code behind class
+
+
+34.Page life cycle events order
+	a)start load postback rendering initialization event unload
+	b)start initialization postback event rendering unload
+	c)start load initialization rendering postback event unload
+	d)start initialization load rendering  postback event unload
+Start >> Page Init >> Page Load >> Validation >> PostBack Event Handling >> Page Rendering >> Page Unload
+
+ANS: start> initialization> load> validation> postback event handling> rendering> unload
+
+
+35)Following code segmqnt can be used to set UI culture and Culture for an all page in .Net web apllication?(select 1)( http://msdn.microsoft.com/en-us/library/bz9tc508(v=vs.100).aspx)
+	a)Add the the following to Global.asax file.<globalisation UICulture="es" Culture="es-MX"/>
+	b)Add the the following to Web.config file.<globalisation UICulture="es" Culture="es-MX"/> ---------------------ANS
+	c)Add the the following to Web.config file. <Culture page UIculture-"es" culture="es-MX"/><Culture UIculture-"es" culture="es-MX"/>
+	d)Add the the following to @Page Directive <% @Page UIculture-"es" culture="es-MX"%>
+
+36)What all elements are required in your ASP.NET page,if you want your class to raise an event names My event?(check 3)( http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.71).aspx)
+A)A delegate for the event,named MY event event Handler ---------------------ANS
+b)A class that holds event data,named MY event event Args ---------------------ANS
+C)A Class that Consumes the event 
+e) A class that raises the event ---------------------ANS
+d)A class that holds  event  configuration names my event config
+
+37)”MyWebpage.ASPX”
+   <asp:Textboxid=textbox1 runat=”server” ontextchange=textbox_textchange></>
+<asp:buttonid=”button1” runat=”server”>
+<input  type=”button” id=”button1”>
+
+a)run-time
+b)compile time
+ ---------------------ANS
+c)page gets submitted  will get anyways when we click on the button
+d)text changed option cannot be used in the textbox  
+
+60) What is the significance of the request object in a asp.net webpage?(check 2)
+
+38) <Sessionstate mode = “SQLQueer”
+Cookieless= “true”(check 3)( http://msdn.microsoft.com/en-us/library/h6bb9cz9(v=vs.71).aspx
+%>
+a)Allow browser to pass state session state state info ---------------------ANS
+b)specify way to sent session data b/w server and client ---------------------ANS
+c)mode in which seession will store data ---------------------ANS
+d)it helps in client side state management 
+
+
+-------------------------------------
+FILE 2 (SCREENSHOTS)
+-------------------------------------
+
+
+1. Which of the following should the class that raises an event, contain? (Check 2)
+
+ANS:	c. This class must contain the event declaration i.e. EventName.
+	d. This class must contain the method that raises the event.
+
+2. Which of the following can a markup in a ASP.NET page contain (Check 3)
+
+ANS:	
+	a. HTML
+	d. Code written in Visual Basic .NET
+	e. Code for ASP.NET server controls
+
+3. How do you implement an event without event specific data (Check 3)
+
+ANS:	a. Determine when to raise the event in your class. Call OnEventName to raise the event
+	b. Define a public event member in your class. Set the type of the event member to a System.EventHandler delegate.
+	e. Provide a protected method in your class that raises the event. Name the method OnEventName. Raise the event within the method. 
+
+4. Select the correct Events which are relevant to global.asax
+	1. Application_Init
+	2. Application_Start
+	3. Session_Init
+	4. Session_End
+	5. Application_Error
+
+ANS:	d. 1,2,4,5
+
+5. What are the statements are true about DataList Control? Choose 3
+
+ANS:	b. This control is a combination of the DataGrid and the Repeater controls
+	c. Its like Repeater control is a template driven, light weight control, and acts as a container of repeated data items
+	d. RepeatDirection property in DataList control can be used to customize the layout of the control
+
+6. What does the following code denote?
+	protected void GreetingBtn_Click(object sender, EventArgs e)
+{....................
+.................
+
+
+</div>
+</form>
+
+ANS:	a. The following page handles the Click event of Button to change the button text and disable the button.
+
+7. What all are the advantages of Code-behind page model (Check 3)
+
+ANS:	b. Code is not exposed to page designers or others who are working only with the page markup.
+	c. Code-behind pages offer a clean separation of the markup and code.
+	d. Code can be reused for multiple pages.
+
+8. Whar are all the attributes related to globalization (Check 3)
+
+ANS:	a. FileEncoding
+	c. RequestEncoding
+	d. ResponseEncoding
+
+9. Which of the following options are not valid ASP.NET Page life-cycle events? Select all that are applicable. (Check 2)
+
+ANS:	b. Activate
+	e. Upload
+
+10. How does ASP.NET let you include keyboard accessibility support for you pages (Check 3)
+
+
+ANS:	
+	X a. You can set the Text property to a specifi locale (DONT CHECK THIS)
+	b. You can set tab order for controls, using the TabInde property.
+	c. You can set the focus on input controls either by using methods such as the SetFocus method or by setting the DefaultFocus property for a form.
+	d. CHECK THIS ANSWER
+
+11. What is the significance of the Request object in a ASP.NET web page? (Check 2)
+
+ANS:	b. You can use this object to read what the browser has sent.
+	c. Provides access to the current page request including the request headers, cookies, client certificate, query string.
+
+12. How is caching implemented in ASP.NET? (Check 4 or 3)
+
+ANS:	b. Information about an instance of this class is available through the Cache property of the HttpContext object.
+	c. One instance of this class is created per application domain and remains valid till the application domain is active.
+	d. Caching can be implemented using the Cache class.
+
+13. An ASP.NET web page is an instance of which of the following classes?
+
+ANS:	c. System.Web.UI.Page class
+
+14. What does the following code denote?
+	void Check_Clicked(Object sender, EventArgs e)
+		{
+			Message.Text = CalculateTotal(checkbox1.Checked).ToString("c");	
+}
+............................
+
+
+ANS:	b. This page handles the Checkbox click event of Checkbox to caluclate Bonus and display the result Message result in currency format.
+
+
+15. What all are the new assemblies included in ASP.NET 3.5? (Check 2)
+
+ANS:	b. System.Xml.Linq.dll
+	c. System.Data.DataSetExtensions.dll
+
+16. Which of the following statements are true about Request/REsponse Object? (Check 2)
+
+ANS: 	b. HttpRequest & HttpResponse are the classes which provide Requests and Response Object.
+	d. Request.ServerVariables("LOCAL_ADDR") gives the IP address of the server hosting the requested page.
+
+17. Identify the features of Dynamic compilation of ASP.NET web pages. Select all that are applicable. (Check 3)
+
+ANS:	a. ASP.NET page is compiled once & stored in a temporary folder.
+	b. An ASP.NET page is compiled only when the page is modified.
+	d. ASP.NET page does not need to be parsed and compiled each and every time it is requested.
+
+18. Which of the following code segment can be used to set the UI culture and culture for an individual page in .NET web application?
+
+ANS:	d. Add the following code to @Page directive <%@ Page UICulture="es" Culture="es-MX"%>
+
+19. Choose correct Template Within a DataList tag which we can customize
+	1. AlternatingItemTemplate
+	2. EditItemTemplate
+	3. FooterTemplate
+	4. HeaderTemplate
+	5. ItemTemplate
+	6. SelectedstyleItemTemplate
+	7. SeparatorstyleItemTemplate
+
+ANS:	d. 1,2,3,4,5
+
+20. What does a Page object denote (Check 3)
+
+ANS:	b. You derive a Web forms page from the page class in the code-behind technique.
+	c. Page object is appliable only when you combine the application logic and presentation logic in one file instead of code-behind.
+	c. It is compiled at run time as Page object and cached in server memory and serves as teh naming container for most of the server controls.
+
+
+21. Which of the following are true about Master Page? (Check 3)
+
+ANS:	b. Useful in rendering only a part of the content in a web page.
+	c. Acts as a template for the content pages.
+	d. The @Page directive is used to include the Master Pages.
+
+22. What all will you consider while designing your own business object? (Check 3)
+
+ANS:	b. What should be the attributes of the object
+	c. How will the object be used across layers
+	d. What operations should the object support
+
+
+23. Which are the different ways of editing configuration settings? (Check 3).
+
+ANS:	c. By using Text editors
+	d. By using Configuration API
+	e. By using Web Site Administration Tool for web sites.
+
+24. ______ exposes several application-level events.
+
+ANS:	b. HttpApplication
+
+25. RegionInfo represents preferences of the use and does not depend on the user's language or culture. Select all that are applicable. State true or false.
+
+ANS: FALSE
+
+26. Most of the ASP.NET tags start with a ______ prefix.
+
+ANS:	a. asp:
+
+27. Which of the following options preserve data in ASP.NET? (Check 3)
+
+ANS:	a. Query Strings
+	c. View State
+	e. Control State
+
+28. What does the following code denote?
+
+	<html>
+		<script language="C#"runat=server>.........................
+	........................
+	</html>
+
+ANS:	b. The following page handles the Click event of Button to changes the background color of TextBox.
+
+29. When a client request an ASP.NET page (.aspx page), the server processes the user request and returns the HTML output to client's browser. State True or False.
+
+ANS:	TRUE
+
+30. Which of the following statements are true about assembles? (Check 3)
+
+ANS:	a. Assemblies that reside in your Web applications \Bin directory do not require the @Assembly directive
+	b. @ Assembly directive is used to link an assembly to an ASP.NET web page during compilation
+	d. Assemblies that reside in your Web application's \Bin directory are automatically linked to ASP.NET files within that application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
